@@ -1,1 +1,8 @@
-<router-outlet />
+<app-side-menu></app-side-menu>
+
+<div class="main-content">
+    <span class="open-btn" (click)="sideMenu.openMenu()">&#9776; Menu</span>
+    <div class="page-content">
+        <router-outlet />
+    </div>
+</div>

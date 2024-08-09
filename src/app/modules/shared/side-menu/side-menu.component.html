@@ -1,0 +1,8 @@
+<div id="menuOverlay" class="overlay" (click)="closeMenu()"></div>
+
+<div id="sideMenu" class="side-menu" [ngStyle]="{'width': isMenuOpen ? '250px' : '0'}">
+    <a href="javascript:void(0)" class="close-btn" (click)="closeMenu()">&times;</a>
+    <ng-container *ngFor="let menu of pages">
+        <a routerLink="{{ menu.route }}" (click)="closeMenu()">{{ menu.name }}</a>
+    </ng-container>
+</div>
