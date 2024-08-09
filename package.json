@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "deploy": "ng deploy --base-href=/angular_test_app_prod/",
+    "deploy": "ng deploy --base-href=/angular_test_app_prod/ --repo=https://github.com/gowthamgoel/angular_test_app_prod.git --branch=deploy-using-plugin",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
