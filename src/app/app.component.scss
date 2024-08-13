@@ -1,9 +1,16 @@
-.open-btn {
-    font-size: 30px;
-    cursor: pointer;
-}
-
 .main-content {
     padding: 16px;
     transition: margin-left 0.5s;
+
+    .header {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+
+        .open-btn {
+            font-size: 30px;
+            cursor: pointer;
+        }
+    }
 }
