@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { GoogleSigninService } from '../../services/google-signin.service';
+import { GoogleSheetService } from '../../services/google-sheet.service';
 
 @Component({
   selector: 'app-home',
@@ -7,14 +8,5 @@ import { GoogleSigninService } from '../../services/google-signin.service';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
-
-  constructor(private googleSignInService: GoogleSigninService) { }
-
-  signIn() {
-    this.googleSignInService.signIn();
-  }
-
-  signOut() {
-    this.googleSignInService.signOut();
-  }
+  //
 }
