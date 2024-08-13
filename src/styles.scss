@@ -6,6 +6,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'poppins';
+    src: url('assets/fonts/poppins/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
-    font-family: 'jokerman' !important;
+    font-family: 'poppins' !important;
 }
