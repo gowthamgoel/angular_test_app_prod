@@ -1,0 +1,17 @@
+form {
+    .field-group {
+        width: 100%;
+
+        label {
+            font-size: 12px;
+        }
+
+        .field {
+            width: 100%;
+
+            input {
+                width: 95%;
+            }
+        }
+    }
+}
