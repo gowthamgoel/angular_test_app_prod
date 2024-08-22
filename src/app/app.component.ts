@@ -21,7 +21,7 @@ export class AppComponent {
     this.googleSignInService.signOut();
   }
 
-  reset() {
-    this.googleSignInService.resetCreds();
+  connect() {
+    this.googleSignInService.connect();
   }
 }

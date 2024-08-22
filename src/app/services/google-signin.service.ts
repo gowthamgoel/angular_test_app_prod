@@ -19,11 +19,9 @@ export class GoogleSigninService {
     return this.localStoreService.getApiKey();
   }
 
-  constructor(private localStoreService: LocalStoreService) {
-    this.initializeGis();
-  }
+  constructor(private localStoreService: LocalStoreService) { }
 
-  public resetCreds(): void {
+  public connect(): void {
     this.initializeGis();
   }
 
@@ -40,6 +38,7 @@ export class GoogleSigninService {
       console.error(response);
     } else {
       this.ACCESS_TOKEN = response.access_token || '';
+      alert('google API sign in successfull');
       console.log('google API sign in successfull');
 
       this.intiGoolgleSheetsAPIService();
@@ -57,6 +56,7 @@ export class GoogleSigninService {
         discoveryDocs: [this.DISCOVERY_DOC],
       });
 
+      alert('connected to google sheets successfully');
       console.log('connected to google sheets successfully');
     });
   }
