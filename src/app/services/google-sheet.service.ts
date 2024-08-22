@@ -1,15 +1,16 @@
 import { Injectable } from '@angular/core';
+import { LocalStoreService } from './local-store.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class GoogleSheetService {
 
-  private SPREADSHEET_ID = '';
-
-  constructor() {
-    this.SPREADSHEET_ID = window.localStorage.getItem('spreadsheet-id') || '';
+  private get SPREADSHEET_ID() {
+    return this.localStoreService.getSheetId();
   }
+
+  constructor(private localStoreService: LocalStoreService) { }
 
   // 'Sheet1!A1:D10' sample range
   public getSheetData(range: string): Promise<gapi.client.Response<any>> {

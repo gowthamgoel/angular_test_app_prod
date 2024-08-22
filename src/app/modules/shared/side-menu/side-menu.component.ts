@@ -15,6 +15,10 @@ export class SideMenuComponent {
     {
       name: 'Test',
       route: '/cr'
+    },
+    {
+      name: 'Settings',
+      route: '/settings'
     }
   ];
 

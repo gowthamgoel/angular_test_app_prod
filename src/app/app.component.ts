@@ -20,4 +20,8 @@ export class AppComponent {
   signOut() {
     this.googleSignInService.signOut();
   }
+
+  reset() {
+    this.googleSignInService.resetCreds();
+  }
 }
